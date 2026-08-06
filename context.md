@@ -108,8 +108,9 @@ Tailwind (`dark:` variants).
 
 ## Seções da Página (ordem de scroll)
 
-1. **Hero** — badge (`Profile.role`) + `Profile.headline` + `Profile.bio` + CTA "See What Do"
-   → rola suavemente até **Projects**.
+1. **Hero** — `Profile.headline` + `Profile.bio` + CTA "See What I Do" → rola suavemente até
+   **Projects**. Sem badge de cargo (`Profile.role` fica disponível no tipo, mas não é
+   renderizado no Hero).
 2. **About** — bio detalhada + grade discreta de ícones de skills (sem destaque visual forte,
    sem seção própria na navbar).
 3. **Experience** — lista cronológica de `Experience[]`.
