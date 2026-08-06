@@ -9,7 +9,7 @@ import { profile } from "@/data/profile"
 export function Hero() {
   const { t } = useTranslation()
   const headline = useLocalizedText(profile.headline)
-  const bio = useLocalizedText(profile.bio)
+  const tagline = useLocalizedText(profile.tagline)
 
   return (
     <section
@@ -21,7 +21,7 @@ export function Hero() {
           {headline}
         </h1>
 
-        <p className="max-w-xl text-base text-muted-foreground sm:text-lg">{bio}</p>
+        <p className="max-w-xl text-base text-muted-foreground sm:text-lg">{tagline}</p>
 
         <Button
           size="lg"

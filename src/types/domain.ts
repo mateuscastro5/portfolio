@@ -14,6 +14,7 @@ export type Profile = {
   name: string
   role: LocalizedText
   headline: LocalizedText
+  tagline: LocalizedText
   bio: LocalizedText
   avatarUrl: string
   resumeUrl?: string

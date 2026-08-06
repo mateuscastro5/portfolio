@@ -38,7 +38,7 @@ idioma disponível na navbar/footer, preferência persistida em `localStorage`, 
   ```ts
   type LocalizedText = { en: string; pt: string }
   ```
-  Aplicado a: `Profile.headline`, `Profile.bio`, `Profile.role`, `Project.title`,
+  Aplicado a: `Profile.headline`, `Profile.tagline`, `Profile.bio`, `Profile.role`, `Project.title`,
   `Project.description`, `Experience.role`, `Experience.description`.
 - **Não localizados** (mesmos em qualquer idioma): nomes próprios (`Profile.name`,
   `Experience.company`), URLs, datas, imagens, `techStack` (nomes de tecnologia).
@@ -57,7 +57,8 @@ O único objeto representando o dono do portfolio.
 | `name` | `string` | sim | Não localizado |
 | `role` | `LocalizedText` | sim | Ex: "Backend Engineer". Não renderizado no Hero atualmente |
 | `headline` | `LocalizedText` | sim | Título grande do Hero |
-| `bio` | `LocalizedText` | sim | Usado no Hero e/ou About |
+| `tagline` | `LocalizedText` | sim | Subtítulo curto (1 frase) do Hero, abaixo do headline |
+| `bio` | `LocalizedText` | sim | Texto longo do About — trajetória, o que faz, como trabalha |
 | `avatarUrl` | `string` | sim | |
 | `resumeUrl` | `string` | não | Link do CV, se existir |
 | `socialLinks` | `SocialLink[]` | sim | |
@@ -108,11 +109,11 @@ Tailwind (`dark:` variants).
 
 ## Seções da Página (ordem de scroll)
 
-1. **Hero** — `Profile.headline` + `Profile.bio` + CTA "See What I Do" → rola suavemente até
-   **Projects**. Sem badge de cargo (`Profile.role` fica disponível no tipo, mas não é
-   renderizado no Hero).
-2. **About** — bio detalhada + grade discreta de ícones de skills (sem destaque visual forte,
-   sem seção própria na navbar).
+1. **Hero** — `Profile.headline` + `Profile.tagline` (curto) + CTA "See What I Do" → rola
+   suavemente até **Projects**. Sem badge de cargo (`Profile.role` fica disponível no tipo,
+   mas não é renderizado no Hero).
+2. **About** — `Profile.bio` (texto longo) + grade discreta de ícones de skills (sem destaque
+   visual forte, sem seção própria na navbar).
 3. **Experience** — lista cronológica de `Experience[]`.
 4. **Projects** — grid de `Project[]`, itens com `featured = true` recebem destaque visual.
 5. **Footer** — ícones de `Profile.socialLinks`.
