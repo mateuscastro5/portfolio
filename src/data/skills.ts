@@ -1,10 +1,12 @@
 export const skills: string[] = [
   "TypeScript",
-  "React",
+  "Python",
+  "Kotlin",
   "Node.js",
-  "Tailwind CSS",
+  "NestJS",
+  "Spring",
   "PostgreSQL",
   "Docker",
-  "GraphQL",
-  "Next.js",
+  "Redis",
+  "AWS",
 ]

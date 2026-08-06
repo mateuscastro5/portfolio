@@ -3,16 +3,16 @@ import type { Profile } from "@/types/domain"
 export const profile: Profile = {
   name: "Jane Doe",
   role: {
-    en: "Fullstack Web Developer",
-    pt: "Desenvolvedora Web Fullstack",
+    en: "Backend Engineer",
+    pt: "Engenheira Backend",
   },
   headline: {
-    en: "Building Scalable & Engaging Web Experiences",
-    pt: "Construindo Experiências Web Escaláveis e Envolventes",
+    en: "Building Robust & Scalable Backend Systems",
+    pt: "Construindo Sistemas Backend Robustos e Escaláveis",
   },
   bio: {
-    en: "Hey there! I'm Jane, a Full Stack Developer who loves building cool and scalable web experiences. From crafting beautiful frontends to powering robust backends, I bring ideas to life with clean code and great design. Let's create something amazing together!",
-    pt: "Olá! Eu sou a Jane, uma desenvolvedora Full Stack apaixonada por construir experiências web escaláveis e incríveis. De interfaces bonitas a back-ends robustos, transformo ideias em realidade com código limpo e ótimo design. Vamos criar algo incrível juntos!",
+    en: "Hey there! I'm Jane, a Backend Engineer who loves designing robust APIs and scalable systems. From data modeling to cloud infrastructure, I turn complex problems into reliable, well-tested backends. Let's build something solid together!",
+    pt: "Olá! Eu sou a Jane, uma Engenheira Backend apaixonada por projetar APIs robustas e sistemas escaláveis. Da modelagem de dados à infraestrutura em nuvem, transformo problemas complexos em backends confiáveis e bem testados. Vamos construir algo sólido juntos!",
   },
   avatarUrl: "https://api.dicebear.com/9.x/notionists/svg?seed=portfolio-jane",
   resumeUrl: undefined,

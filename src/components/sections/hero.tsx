@@ -17,7 +17,7 @@ export function Hero() {
       className="flex min-h-[calc(100svh-4rem)] scroll-mt-16 flex-col items-center justify-center gap-6 px-6 py-24 text-center"
     >
       <FadeIn className="flex flex-col items-center gap-6">
-        <h1 className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
+        <h1 className="max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
           {headline}
         </h1>
 

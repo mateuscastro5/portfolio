@@ -34,7 +34,7 @@ export function Footer() {
                 aria-label={link.platform}
                 className="text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Icon className="size-4" />
+                <Icon className="size-5" />
               </a>
             )
           })}

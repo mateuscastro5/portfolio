@@ -55,7 +55,7 @@ O único objeto representando o dono do portfolio.
 | Atributo | Tipo | Obrigatório | Notas |
 |---|---|---|---|
 | `name` | `string` | sim | Não localizado |
-| `role` | `LocalizedText` | sim | Badge do Hero, ex: "Fullstack Web Developer" |
+| `role` | `LocalizedText` | sim | Ex: "Backend Engineer". Não renderizado no Hero atualmente |
 | `headline` | `LocalizedText` | sim | Título grande do Hero |
 | `bio` | `LocalizedText` | sim | Usado no Hero e/ou About |
 | `avatarUrl` | `string` | sim | |
