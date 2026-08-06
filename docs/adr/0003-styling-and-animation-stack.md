@@ -16,7 +16,11 @@ animações de entrada em scroll, construído com React + Vite + TypeScript.
   customizáveis (Button, Card, etc.). Primitivas via **Base UI** (`@base-ui/react`) — não
   Radix — decisão explícita: Base UI é o sucessor moderno mantido pelo mesmo time por trás do
   Radix/Floating UI, e é o padrão do preset Nova. Fonte: **Geist Variable**.
-- **lucide-react** para ícones (parte do preset Nova; integração nativa com shadcn/ui).
+- **lucide-react** para ícones de interface (parte do preset Nova; integração nativa com
+  shadcn/ui). Não cobre logos de marca — v1 removeu ícones de marcas por questão de trademark.
+- **react-icons** (subconjunto `react-icons/si`, Simple Icons), usado **apenas** para os logos
+  de marca (GitHub, WhatsApp) no Footer, onde o ícone precisa ser reconhecível como a marca
+  real. `lucide-react` continua sendo a lib padrão para todo ícone de UI genérico.
 - **Motion** (pacote `motion`, `motion.dev` — sucessor do descontinuado `framer-motion`) para
   animações de entrada em viewport (`whileInView`) e transições, via `import { motion } from
   "motion/react"`.
@@ -32,3 +36,6 @@ animações de entrada em scroll, construído com React + Vite + TypeScript.
   alinhado ao requisito de toggle de tema.
 - `motion` adiciona ~50kb ao bundle; aceitável para um portfolio pessoal sem
   restrição rígida de performance.
+- Duas libs de ícones no projeto (`lucide-react` + `react-icons/si`) é uma pequena duplicação
+  aceita conscientemente: nenhuma lib cobre bem os dois casos (UI genérica + logos de marca)
+  ao mesmo tempo.

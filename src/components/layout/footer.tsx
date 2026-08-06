@@ -1,14 +1,15 @@
-import { Code2, Mail, MessageCircle } from "lucide-react"
+import { Mail } from "lucide-react"
 import { useTranslation } from "react-i18next"
-import type { LucideIcon } from "lucide-react"
+import { SiGithub, SiWhatsapp } from "react-icons/si"
+import type { IconType } from "react-icons"
 
 import { profile } from "@/data/profile"
 import type { SocialPlatform } from "@/types/domain"
 
-const SOCIAL_ICONS: Record<SocialPlatform, LucideIcon> = {
-  github: Code2,
+const SOCIAL_ICONS: Record<SocialPlatform, IconType> = {
+  github: SiGithub,
   email: Mail,
-  whatsapp: MessageCircle,
+  whatsapp: SiWhatsapp,
 }
 
 export function Footer() {
