@@ -64,15 +64,15 @@ visita.
 | # | Tarefa | Fatia vertical | Classificação | Status |
 |---|---|---|---|---|
 | 0 | Scaffold do projeto (Vite+React+TS+Tailwind+shadcn init+lucide-react+motion+i18next) | Infra base | `[AFK-Ready]` | ✅ |
-| 1 | Tipos + dados estáticos (`Profile`, `SocialLink`, `Project`, `Experience`, `LocalizedText`) em `src/data/*.ts` | Dados | `[Human-in-the-Loop]` (precisa do seu conteúdo real: nome, bio, projetos, experiências) | ⬜ |
-| 2 | Infra global: `ThemeProvider` + `ThemeToggle`, `I18nProvider` + `LanguageToggle` | UI + estado global | `[AFK-Ready]` | ⬜ |
-| 3 | Navbar (âncoras About/Experience/Projects + toggles) | UI | `[AFK-Ready]` | ⬜ |
-| 4 | Seção Hero (badge, headline, bio, CTA → scroll Projects) | UI + dados (Profile) | `[AFK-Ready]` | ⬜ |
-| 5 | Seção About (bio detalhada + grade de ícones de skills) | UI + dados (Profile) | `[AFK-Ready]` | ⬜ |
-| 6 | Seção Experience (timeline cronológica) | UI + dados (Experience) | `[AFK-Ready]` | ⬜ |
-| 7 | Seção Projects (grid + destaque `featured`) | UI + dados (Project) | `[AFK-Ready]` | ⬜ |
-| 8 | Footer (ícones de contato + ThemeToggle) | UI + dados (Profile.socialLinks) | `[AFK-Ready]` | ⬜ |
-| 9 | Animações de scroll (`motion`) em todas as seções + revisão fina de responsividade | Polish | `[Human-in-the-Loop]` (revisão visual) | ⬜ |
+| 1 | Tipos + dados estáticos (`Profile`, `SocialLink`, `Project`, `Experience`, `LocalizedText`) em `src/data/*.ts` | Dados | `[Human-in-the-Loop]` (placeholders — conteúdo real pendente) | ✅ |
+| 2 | Infra global: `ThemeProvider` + `ThemeToggle`, `i18next` + `LanguageToggle` | UI + estado global | `[AFK-Ready]` | ✅ |
+| 3 | Navbar (âncoras About/Experience/Projects + toggles) | UI | `[AFK-Ready]` | ✅ |
+| 4 | Seção Hero (badge, headline, bio, CTA → scroll Projects) | UI + dados (Profile) | `[AFK-Ready]` | ✅ |
+| 5 | Seção About (bio detalhada + grade de ícones de skills) | UI + dados (Profile) | `[AFK-Ready]` | ✅ |
+| 6 | Seção Experience (timeline cronológica) | UI + dados (Experience) | `[AFK-Ready]` | ✅ |
+| 7 | Seção Projects (grid + destaque `featured`) | UI + dados (Project) | `[AFK-Ready]` | ✅ |
+| 8 | Footer (ícones de contato) | UI + dados (Profile.socialLinks) | `[AFK-Ready]` | ✅ |
+| 9 | Animações de scroll (`motion`) em todas as seções + revisão fina de responsividade | Polish | `[Human-in-the-Loop]` (revisão visual) | ✅ |
 
-**Observação:** Tarefa 1 precisa do seu conteúdo real (nome, bio, empresas, projetos etc.) —
-vou usar placeholders plausíveis se você preferir avançar sem parar, e você substitui depois.
+**Observação:** conteúdo real (nome, bio, empresas, projetos, links) ainda é placeholder —
+substitua em `src/data/*.ts` quando tiver as informações definitivas.

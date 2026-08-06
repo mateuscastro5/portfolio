@@ -54,10 +54,10 @@ O único objeto representando o dono do portfolio.
 
 | Atributo | Tipo | Obrigatório | Notas |
 |---|---|---|---|
-| `name` | `string` | sim | |
-| `role` | `string` | sim | Badge do Hero, ex: "Fullstack Web Developer" |
-| `headline` | `string` | sim | Título grande do Hero |
-| `bio` | `string` | sim | Usado no Hero e/ou About |
+| `name` | `string` | sim | Não localizado |
+| `role` | `LocalizedText` | sim | Badge do Hero, ex: "Fullstack Web Developer" |
+| `headline` | `LocalizedText` | sim | Título grande do Hero |
+| `bio` | `LocalizedText` | sim | Usado no Hero e/ou About |
 | `avatarUrl` | `string` | sim | |
 | `resumeUrl` | `string` | não | Link do CV, se existir |
 | `socialLinks` | `SocialLink[]` | sim | |
@@ -78,9 +78,9 @@ Instagram, etc.) faz parte do domínio atual.
 
 | Atributo | Tipo | Obrigatório | Notas |
 |---|---|---|---|
-| `title` | `string` | sim | |
-| `description` | `string` | sim | |
-| `techStack` | `string[]` | sim | Nomes de tecnologia, renderizados como badges/ícones |
+| `title` | `LocalizedText` | sim | |
+| `description` | `LocalizedText` | sim | |
+| `techStack` | `string[]` | sim | Nomes de tecnologia, renderizados como badges/ícones. Não localizado |
 | `image` | `string` | sim | |
 | `liveUrl` | `string` | não | |
 | `repoUrl` | `string` | não | |
@@ -90,12 +90,12 @@ Instagram, etc.) faz parte do domínio atual.
 
 | Atributo | Tipo | Obrigatório | Notas |
 |---|---|---|---|
-| `company` | `string` | sim | |
-| `role` | `string` | sim | |
+| `company` | `string` | sim | Não localizado |
+| `role` | `LocalizedText` | sim | |
 | `startDate` | `string` (ISO) | sim | |
 | `endDate` | `string` (ISO) \| `null` | sim (pode ser `null`) | `null` = "Presente" |
-| `description` | `string` | sim | |
-| `techStack` | `string[]` | não | |
+| `description` | `LocalizedText` | sim | |
+| `techStack` | `string[]` | não | Não localizado |
 
 **Invariante:** no máximo uma `Experience` com `endDate = null` por vez (só um emprego atual).
 
@@ -114,11 +114,12 @@ Tailwind (`dark:` variants).
    sem seção própria na navbar).
 3. **Experience** — lista cronológica de `Experience[]`.
 4. **Projects** — grid de `Project[]`, itens com `featured = true` recebem destaque visual.
-5. **Footer** — ícones de `Profile.socialLinks` + toggle de tema (dark/light).
+5. **Footer** — ícones de `Profile.socialLinks`.
 
 ## Navbar
 
-Itens: **About**, **Experience**, **Projects** (âncoras). Sem itens para Skills ou Contact.
+Itens: **About**, **Experience**, **Projects** (âncoras) + toggle de tema (dark/light) + toggle
+de idioma (en/pt). Sem itens para Skills ou Contact.
 
 ## Stack Técnica
 

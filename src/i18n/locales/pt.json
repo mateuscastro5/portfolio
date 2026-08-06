@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos"
+  },
+  "hero": {
+    "cta": "Veja o que eu faço"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "skillsTitle": "Skills & Tecnologias"
+  },
+  "experience": {
+    "title": "Experiência",
+    "present": "Atual"
+  },
+  "projects": {
+    "title": "Projetos",
+    "featured": "Destaque",
+    "liveDemo": "Ver Demo",
+    "sourceCode": "Código Fonte"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  },
+  "theme": {
+    "toggle": "Alternar tema"
+  },
+  "language": {
+    "toggle": "Alternar idioma"
+  }
+}
