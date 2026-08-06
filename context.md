@@ -25,7 +25,7 @@ carregar conteúdo do domínio.
 ## Navegação
 
 **Single-page** com scroll suave por âncoras (`#about`, `#experience`, `#projects`). Sem
-React Router, sem rotas separadas. Animações de entrada em viewport via `framer-motion`.
+React Router, sem rotas separadas. Animações de entrada em viewport via `motion`.
 
 ## Internacionalização (i18n)
 
@@ -123,4 +123,4 @@ Itens: **About**, **Experience**, **Projects** (âncoras). Sem itens para Skills
 ## Stack Técnica
 
 React + Vite + TypeScript + Tailwind CSS + `shadcn/ui` + `lucide-react` (ícones) +
-`framer-motion` (animações). Código sem comentários, pastas organizadas por responsabilidade.
+`motion` (animações). Código sem comentários, pastas organizadas por responsabilidade.
