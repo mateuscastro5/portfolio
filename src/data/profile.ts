@@ -1,20 +1,20 @@
 import type { Profile } from "@/types/domain"
 
 export const profile: Profile = {
-  name: "Jane Doe",
+  name: "Mateus",
   role: {
     en: "Backend Engineer",
-    pt: "Engenheira Backend",
+    pt: "Engenheiro Backend",
   },
   headline: {
-    en: "Building Robust & Scalable Backend Systems",
-    pt: "Construindo Sistemas Backend Robustos e Escaláveis",
+    en: "Building Robust & Scalable Backends",
+    pt: "Construindo Backends Robustos e Escaláveis",
   },
   bio: {
-    en: "Hey there! I'm Jane, a Backend Engineer who loves designing robust APIs and scalable systems. From data modeling to cloud infrastructure, I turn complex problems into reliable, well-tested backends. Let's build something solid together!",
-    pt: "Olá! Eu sou a Jane, uma Engenheira Backend apaixonada por projetar APIs robustas e sistemas escaláveis. Da modelagem de dados à infraestrutura em nuvem, transformo problemas complexos em backends confiáveis e bem testados. Vamos construir algo sólido juntos!",
+    en: "Backend Engineer building robust APIs and scalable, well-tested systems.",
+    pt: "Engenheiro Backend construindo APIs robustas e sistemas escaláveis e bem testados.",
   },
-  avatarUrl: "https://api.dicebear.com/9.x/notionists/svg?seed=portfolio-jane",
+  avatarUrl: "https://api.dicebear.com/9.x/notionists/svg?seed=portfolio-mateus",
   resumeUrl: undefined,
   socialLinks: [
     { platform: "github", url: "https://github.com/yourusername" },

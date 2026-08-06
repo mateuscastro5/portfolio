@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
     company: "Nimbus Labs",
     role: {
       en: "Backend Engineer",
-      pt: "Engenheira Backend",
+      pt: "Engenheiro Backend",
     },
     startDate: "2023-03-01",
     endDate: null,
@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
     company: "Brightpath Studio",
     role: {
       en: "Backend Developer",
-      pt: "Desenvolvedora Backend",
+      pt: "Desenvolvedor Backend",
     },
     startDate: "2021-06-01",
     endDate: "2023-02-01",
@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
     company: "Freelance",
     role: {
       en: "Software Developer",
-      pt: "Desenvolvedora de Software",
+      pt: "Desenvolvedor de Software",
     },
     startDate: "2019-09-01",
     endDate: "2021-05-01",
