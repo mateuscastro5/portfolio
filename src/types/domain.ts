@@ -14,11 +14,17 @@ export type Profile = {
   name: string
   role: LocalizedText
   headline: LocalizedText
+  headlineSuffix?: LocalizedText
   tagline: LocalizedText
   bio: LocalizedText
   avatarUrl: string
   resumeUrl?: string
   socialLinks: SocialLink[]
+}
+
+export type ProjectRepo = {
+  label: string
+  url: string
 }
 
 export type Project = {
@@ -28,6 +34,7 @@ export type Project = {
   image: string
   liveUrl?: string
   repoUrl?: string
+  repos?: ProjectRepo[]
   featured: boolean
 }
 
@@ -38,4 +45,5 @@ export type Experience = {
   endDate: string | null
   description: LocalizedText
   techStack?: string[]
+  repoUrl?: string
 }

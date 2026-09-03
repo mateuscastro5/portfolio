@@ -57,20 +57,36 @@ function ProjectCard({ project, delay }: { project: ProjectEntry; delay: number 
               }
             />
           )}
-          {project.repoUrl && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="gap-1.5"
-              nativeButton={false}
-              render={
-                <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                  <Code2 className="size-3.5" />
-                  {t("projects.sourceCode")}
-                </a>
-              }
-            />
-          )}
+          {project.repos && project.repos.length > 0
+            ? project.repos.map((repo) => (
+                <Button
+                  key={repo.url}
+                  variant="outline"
+                  size="sm"
+                  className="gap-1.5"
+                  nativeButton={false}
+                  render={
+                    <a href={repo.url} target="_blank" rel="noopener noreferrer">
+                      <Code2 className="size-3.5" />
+                      {repo.label}
+                    </a>
+                  }
+                />
+              ))
+            : project.repoUrl && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="gap-1.5"
+                  nativeButton={false}
+                  render={
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                      <Code2 className="size-3.5" />
+                      {t("projects.sourceCode")}
+                    </a>
+                  }
+                />
+              )}
         </CardFooter>
       </Card>
     </FadeIn>

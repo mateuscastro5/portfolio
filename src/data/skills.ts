@@ -1,7 +1,7 @@
 export const skills: string[] = [
   "TypeScript",
   "Python",
-  "Kotlin",
+  "Kotlin (not great yet)",
   "Node.js",
   "NestJS",
   "Spring",
