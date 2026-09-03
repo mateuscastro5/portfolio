@@ -2,7 +2,12 @@
   "nav": {
     "about": "About",
     "experience": "Experience",
-    "projects": "Projects"
+    "projects": "Projects",
+    "contact": "Contact Me"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Pick whichever works best for you."
   },
   "hero": {
     "cta": "See What I Do"

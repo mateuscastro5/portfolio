@@ -1,19 +1,29 @@
+import type { ReactElement } from "react"
 import { useTranslation } from "react-i18next"
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import { profile } from "@/data/profile"
 import { SOCIAL_ICONS } from "@/lib/social-icons"
 
-export function Footer() {
+export function ContactModal({ trigger }: { trigger: ReactElement }) {
   const { t } = useTranslation()
-  const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-border/60 px-6 py-10">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 text-sm text-muted-foreground sm:flex-row sm:justify-between">
-        <p>
-          © {year} {profile.name}. {t("footer.rights")}
-        </p>
-        <div className="flex items-center gap-3">
+    <Dialog>
+      <DialogTrigger render={trigger} />
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>{t("contact.title")}</DialogTitle>
+          <DialogDescription>{t("contact.description")}</DialogDescription>
+        </DialogHeader>
+        <div className="mt-4 flex items-center justify-center gap-5">
           {profile.socialLinks.map((link) => {
             const Icon = SOCIAL_ICONS[link.platform]
             return (
@@ -25,12 +35,12 @@ export function Footer() {
                 aria-label={link.platform}
                 className="text-muted-foreground transition-colors hover:text-foreground"
               >
-                <Icon className="size-5" />
+                <Icon className="size-6" />
               </a>
             )
           })}
         </div>
-      </div>
-    </footer>
+      </DialogContent>
+    </Dialog>
   )
 }

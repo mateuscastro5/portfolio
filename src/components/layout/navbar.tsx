@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { ContactModal } from "@/components/contact-modal"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LanguageToggle } from "@/components/language-toggle"
 import { profile } from "@/data/profile"
@@ -31,6 +32,16 @@ export function Navbar() {
               {t(`nav.${anchor}`)}
             </a>
           ))}
+          <ContactModal
+            trigger={
+              <button
+                type="button"
+                className="cursor-pointer transition-colors hover:text-foreground"
+              >
+                {t("nav.contact")}
+              </button>
+            }
+          />
         </nav>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -61,6 +72,17 @@ export function Navbar() {
                     {t(`nav.${anchor}`)}
                   </a>
                 ))}
+                <ContactModal
+                  trigger={
+                    <button
+                      type="button"
+                      onClick={() => setOpen(false)}
+                      className="cursor-pointer text-left text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {t("nav.contact")}
+                    </button>
+                  }
+                />
               </nav>
             </SheetContent>
           </Sheet>

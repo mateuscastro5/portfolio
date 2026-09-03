@@ -2,7 +2,12 @@
   "nav": {
     "about": "Sobre",
     "experience": "Experiência",
-    "projects": "Projetos"
+    "projects": "Projetos",
+    "contact": "Fale Comigo"
+  },
+  "contact": {
+    "title": "Fale Comigo",
+    "description": "Escolha por onde prefere falar comigo."
   },
   "hero": {
     "cta": "Veja o que eu faço"
