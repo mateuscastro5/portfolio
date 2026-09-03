@@ -14,6 +14,7 @@ const NAV_ANCHORS = ["about", "experience", "projects"] as const
 export function Navbar() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+  const [contactOpen, setContactOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-sm">
@@ -32,16 +33,13 @@ export function Navbar() {
               {t(`nav.${anchor}`)}
             </a>
           ))}
-          <ContactModal
-            trigger={
-              <button
-                type="button"
-                className="cursor-pointer transition-colors hover:text-foreground"
-              >
-                {t("nav.contact")}
-              </button>
-            }
-          />
+          <button
+            type="button"
+            onClick={() => setContactOpen(true)}
+            className="cursor-pointer transition-colors hover:text-foreground"
+          >
+            {t("nav.contact")}
+          </button>
         </nav>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -55,8 +53,8 @@ export function Navbar() {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
               render={
-                <Button variant="ghost" size="icon" aria-label="Menu">
-                  <Menu className="size-4" />
+                <Button variant="ghost" size="icon-lg" aria-label="Menu">
+                  <Menu className="size-5" />
                 </Button>
               }
             />
@@ -72,22 +70,22 @@ export function Navbar() {
                     {t(`nav.${anchor}`)}
                   </a>
                 ))}
-                <ContactModal
-                  trigger={
-                    <button
-                      type="button"
-                      onClick={() => setOpen(false)}
-                      className="cursor-pointer text-left text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {t("nav.contact")}
-                    </button>
-                  }
-                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOpen(false)
+                    setContactOpen(true)
+                  }}
+                  className="cursor-pointer text-left text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {t("nav.contact")}
+                </button>
               </nav>
             </SheetContent>
           </Sheet>
         </div>
       </div>
+      <ContactModal open={contactOpen} onOpenChange={setContactOpen} />
     </header>
   )
 }

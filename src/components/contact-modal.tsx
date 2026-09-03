@@ -1,4 +1,3 @@
-import type { ReactElement } from "react"
 import { useTranslation } from "react-i18next"
 
 import {
@@ -7,17 +6,21 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog"
 import { profile } from "@/data/profile"
 import { SOCIAL_ICONS } from "@/lib/social-icons"
 
-export function ContactModal({ trigger }: { trigger: ReactElement }) {
+export function ContactModal({
+  open,
+  onOpenChange,
+}: {
+  open: boolean
+  onOpenChange: (open: boolean) => void
+}) {
   const { t } = useTranslation()
 
   return (
-    <Dialog>
-      <DialogTrigger render={trigger} />
+    <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>{t("contact.title")}</DialogTitle>
