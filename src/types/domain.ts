@@ -22,6 +22,11 @@ export type Profile = {
   socialLinks: SocialLink[]
 }
 
+export type ProjectRepo = {
+  label: string
+  url: string
+}
+
 export type Project = {
   title: LocalizedText
   description: LocalizedText
@@ -29,6 +34,7 @@ export type Project = {
   image: string
   liveUrl?: string
   repoUrl?: string
+  repos?: ProjectRepo[]
   featured: boolean
 }
 
