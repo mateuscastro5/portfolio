@@ -14,6 +14,7 @@ export type Profile = {
   name: string
   role: LocalizedText
   headline: LocalizedText
+  headlineSuffix?: LocalizedText
   tagline: LocalizedText
   bio: LocalizedText
   avatarUrl: string
@@ -38,4 +39,5 @@ export type Experience = {
   endDate: string | null
   description: LocalizedText
   techStack?: string[]
+  repoUrl?: string
 }

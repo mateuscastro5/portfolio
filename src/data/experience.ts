@@ -2,45 +2,31 @@ import type { Experience } from "@/types/domain"
 
 export const experiences: Experience[] = [
   {
-    company: "Nimbus Labs",
+    company: "Safras & Cifras",
     role: {
-      en: "Backend Engineer",
-      pt: "Engenheiro Backend",
+      en: "Fullstack Developer",
+      pt: "Desenvolvedor Fullstack",
     },
-    startDate: "2023-03-01",
+    startDate: "2025-09-01",
     endDate: null,
     description: {
-      en: "Designing and maintaining the core REST APIs and microservices, modeling the primary PostgreSQL schemas, and improving reliability with Redis caching and better observability.",
-      pt: "Desenho e manutenção das APIs REST e microsserviços principais, modelagem dos esquemas PostgreSQL e melhoria de confiabilidade com cache em Redis e observabilidade.",
+      en: "Architected the Conecta Safras platform from scratch: a Turborepo + pnpm monorepo with 7 apps (Next.js and Vite) and 10+ internal packages, from the shared design system to a custom tax calculation engine. Auth and Row Level Security run on Supabase across subdomains, deployed on Cloudflare Workers/Pages with per-app selective CI/CD.",
+      pt: "Arquitetei a plataforma Conecta Safras do zero: um monorepo Turborepo + pnpm com 7 apps (Next.js e Vite) e mais de 10 pacotes internos, do design system compartilhado a um motor de cálculo tributário próprio. Autenticação e Row Level Security via Supabase entre subdomínios, deploy em Cloudflare Workers/Pages com CI/CD seletivo por app.",
     },
-    techStack: ["Node.js", "NestJS", "PostgreSQL", "Redis", "AWS"],
+    techStack: ["TypeScript", "Next.js", "React", "Supabase", "Turborepo", "Cloudflare"],
   },
   {
-    company: "Brightpath Studio",
+    company: "Betalent",
     role: {
       en: "Backend Developer",
       pt: "Desenvolvedor Backend",
     },
-    startDate: "2021-06-01",
-    endDate: "2023-02-01",
+    startDate: "2025-01-01",
+    endDate: "2025-06-01",
     description: {
-      en: "Built internal services and integrations for client platforms, focusing on API design, database performance and containerized deployments.",
-      pt: "Construção de serviços internos e integrações para plataformas de clientes, com foco em design de API, performance de banco de dados e deploys containerizados.",
+      en: "Worked full time on early-stage and ongoing projects with varied scopes, from microservices to REST APIs.",
+      pt: "Atuei em projetos early-stage e em andamento, em regime full time, com escopos variados, de microsserviços a APIs REST.",
     },
-    techStack: ["Python", "PostgreSQL", "Docker"],
-  },
-  {
-    company: "Freelance",
-    role: {
-      en: "Software Developer",
-      pt: "Desenvolvedor de Software",
-    },
-    startDate: "2019-09-01",
-    endDate: "2021-05-01",
-    description: {
-      en: "Delivered backend services and small APIs for local businesses, handling everything from data modeling to deployment.",
-      pt: "Entrega de serviços backend e pequenas APIs para negócios locais, cuidando de tudo, da modelagem de dados ao deploy.",
-    },
-    techStack: ["Kotlin", "Spring"],
+    techStack: ["TypeScript", "PHP", "MySQL", "Laravel", "AdonisJS"],
   },
 ]

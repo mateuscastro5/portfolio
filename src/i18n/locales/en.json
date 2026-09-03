@@ -13,7 +13,8 @@
   },
   "experience": {
     "title": "Experience",
-    "present": "Present"
+    "present": "Present",
+    "repo": "View repository"
   },
   "projects": {
     "title": "Projects",

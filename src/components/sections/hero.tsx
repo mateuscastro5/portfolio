@@ -9,6 +9,7 @@ import { profile } from "@/data/profile"
 export function Hero() {
   const { t } = useTranslation()
   const headline = useLocalizedText(profile.headline)
+  const headlineSuffix = useLocalizedText(profile.headlineSuffix)
   const tagline = useLocalizedText(profile.tagline)
 
   return (
@@ -19,6 +20,11 @@ export function Hero() {
       <FadeIn className="flex flex-col items-center gap-6">
         <h1 className="max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
           {headline}
+          {headlineSuffix && (
+            <span className="mt-1 block text-base font-normal text-muted-foreground sm:text-lg">
+              {headlineSuffix}
+            </span>
+          )}
         </h1>
 
         <p className="max-w-xl text-base text-muted-foreground sm:text-lg">{tagline}</p>

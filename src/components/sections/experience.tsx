@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react"
 import { useTranslation } from "react-i18next"
 
 import { Badge } from "@/components/ui/badge"
@@ -22,6 +23,7 @@ function usePeriodLabel(entry: ExperienceEntry) {
 }
 
 function ExperienceItem({ entry, delay }: { entry: ExperienceEntry; delay: number }) {
+  const { t } = useTranslation()
   const role = useLocalizedText(entry.role)
   const description = useLocalizedText(entry.description)
   const period = usePeriodLabel(entry)
@@ -47,6 +49,17 @@ function ExperienceItem({ entry, delay }: { entry: ExperienceEntry; delay: numbe
             </Badge>
           ))}
         </div>
+      )}
+      {entry.repoUrl && (
+        <a
+          href={entry.repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex items-center gap-1.5 text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+        >
+          <ExternalLink className="size-3.5" />
+          {t("experience.repo")}
+        </a>
       )}
     </FadeIn>
   )
