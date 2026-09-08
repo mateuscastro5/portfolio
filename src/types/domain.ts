@@ -36,6 +36,7 @@ export type Project = {
   repoUrl?: string
   repos?: ProjectRepo[]
   featured: boolean
+  inDevelopment?: boolean
 }
 
 export type Experience = {

@@ -24,8 +24,10 @@
   "projects": {
     "title": "Projetos",
     "featured": "Destaque",
+    "inDevelopment": "Em Desenvolvimento",
     "liveDemo": "Ver Demo",
-    "sourceCode": "Código Fonte"
+    "sourceCode": "Código Fonte",
+    "moreOnGithub": "Mais projetos, menores ou mais diretos, você encontra no meu"
   },
   "footer": {
     "rights": "Todos os direitos reservados."

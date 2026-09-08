@@ -24,8 +24,10 @@
   "projects": {
     "title": "Projects",
     "featured": "Featured",
+    "inDevelopment": "In Development",
     "liveDemo": "Live Demo",
-    "sourceCode": "Source Code"
+    "sourceCode": "Source Code",
+    "moreOnGithub": "More projects, smaller or more straightforward, can be found on my"
   },
   "footer": {
     "rights": "All rights reserved."

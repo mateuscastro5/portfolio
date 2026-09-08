@@ -47,5 +47,6 @@ export const projects: Project[] = [
     image: "https://placehold.co/640x400/e5e4e7/08060d?text=Event+Ticketing+API",
     repoUrl: "https://github.com/mateuscastro5/kotlin-event-ticketing-api",
     featured: false,
+    inDevelopment: true,
   },
 ]

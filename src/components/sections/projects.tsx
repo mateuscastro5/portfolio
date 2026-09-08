@@ -7,8 +7,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { FadeIn } from "@/components/motion/fade-in"
 import { useLocalizedText } from "@/hooks/use-localized-text"
 import { projects } from "@/data/projects"
+import { profile } from "@/data/profile"
 import type { Project as ProjectEntry } from "@/types/domain"
 import { cn } from "@/lib/utils"
+
+const GITHUB_URL = profile.socialLinks.find((link) => link.platform === "github")?.url
 
 function ProjectCard({ project, delay }: { project: ProjectEntry; delay: number }) {
   const { t } = useTranslation()
@@ -27,11 +30,18 @@ function ProjectCard({ project, delay }: { project: ProjectEntry; delay: number 
         <CardHeader>
           <div className="flex items-center justify-between gap-2">
             <CardTitle className="text-base">{title}</CardTitle>
-            {project.featured && (
-              <Badge variant="secondary" className="text-xs font-normal">
-                {t("projects.featured")}
-              </Badge>
-            )}
+            <div className="flex items-center gap-1.5">
+              {project.inDevelopment && (
+                <Badge variant="outline" className="text-xs font-normal">
+                  {t("projects.inDevelopment")}
+                </Badge>
+              )}
+              {project.featured && (
+                <Badge variant="secondary" className="text-xs font-normal">
+                  {t("projects.featured")}
+                </Badge>
+              )}
+            </div>
           </div>
           <CardDescription>{description}</CardDescription>
         </CardHeader>
@@ -109,6 +119,23 @@ export function Projects() {
             <ProjectCard key={project.title.en} project={project} delay={(index % 3) * 0.1} />
           ))}
         </div>
+
+        {GITHUB_URL && (
+          <FadeIn delay={0.2}>
+            <p className="mt-10 text-center text-sm text-muted-foreground">
+              {t("projects.moreOnGithub")}{" "}
+              <a
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-muted-foreground"
+              >
+                GitHub
+              </a>
+              .
+            </p>
+          </FadeIn>
+        )}
       </div>
     </section>
   )
