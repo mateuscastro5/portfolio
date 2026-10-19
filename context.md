@@ -69,10 +69,10 @@ O único objeto representando o dono do portfolio.
 
 | Atributo | Tipo | Obrigatório | Notas |
 |---|---|---|---|
-| `platform` | `'github' \| 'email' \| 'whatsapp'` | sim | Enum fechado — invariante |
+| `platform` | `'github' \| 'linkedin' \| 'email' \| 'whatsapp'` | sim | Enum fechado — invariante |
 | `url` | `string` | sim | |
 
-**Invariante:** `platform` restrito a exatamente esses três valores. Nenhum outro (X, LinkedIn,
+**Invariante:** `platform` restrito a exatamente esses quatro valores. Nenhum outro (X,
 Instagram, etc.) faz parte do domínio atual.
 
 ### Project

@@ -19,7 +19,7 @@ incluindo se ele está empregado atualmente, para entender sua trajetória.
 **US5.** Como visitante, quero ver os projetos (Projects) com destaque para os mais relevantes
 (`featured`), com links para live demo e repositório, para avaliar o trabalho prático.
 
-**US6.** Como visitante, quero contatar o dono via GitHub, Email ou WhatsApp (ícones no
+**US6.** Como visitante, quero contatar o dono via GitHub, LinkedIn, Email ou WhatsApp (ícones no
 footer/navbar), sem precisar de uma seção de contato dedicada.
 
 **US7.** Como visitante, quero alternar entre tema claro e escuro, com a escolha lembrada na

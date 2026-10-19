@@ -3,7 +3,7 @@ export type LocalizedText = {
   pt: string
 }
 
-export type SocialPlatform = "github" | "email" | "whatsapp"
+export type SocialPlatform = "github" | "linkedin" | "email" | "whatsapp"
 
 export type SocialLink = {
   platform: SocialPlatform
