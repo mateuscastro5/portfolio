@@ -74,5 +74,5 @@ visita.
 | 8 | Footer (ícones de contato) | UI + dados (Profile.socialLinks) | `[AFK-Ready]` | ✅ |
 | 9 | Animações de scroll (`motion`) em todas as seções + revisão fina de responsividade | Polish | `[Human-in-the-Loop]` (revisão visual) | ✅ |
 
-**Observação:** conteúdo real (nome, bio, empresas, projetos, links) ainda é placeholder —
-substitua em `src/data/*.ts` quando tiver as informações definitivas.
+**Observação:** conteúdo real (bio, experiências, projetos, links e imagens) em `src/data/*.ts`
+e `public/projects/`, alinhado com o currículo.

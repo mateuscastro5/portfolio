@@ -3,8 +3,8 @@ import type { Profile } from "@/types/domain"
 export const profile: Profile = {
   name: "Mateus",
   role: {
-    en: "Backend Engineer",
-    pt: "Engenheiro Backend",
+    en: "Full Stack Engineer (Backend Focus)",
+    pt: "Engenheiro Full Stack (foco em backend)",
   },
   headline: {
     en: "Building Robust & Scalable Backends",
@@ -15,12 +15,12 @@ export const profile: Profile = {
     pt: "(e frontend também)",
   },
   tagline: {
-    en: "Backend Engineer building robust APIs and scalable, well-tested systems.",
-    pt: "Construo APIs robustas e sistemas backend escaláveis e bem testados.",
+    en: "Full Stack Engineer with a backend focus, building robust APIs, scalable systems and AI integrations.",
+    pt: "Engenheiro Full Stack com foco em backend: construo APIs robustas, sistemas escaláveis e integrações com IA.",
   },
   bio: {
-    en: "Hey there! I'm Mateus, a Backend Engineer (that can develop front if needed) who enjoys turning complex problems into reliable, well-tested systems. Over the past few years I've worked across APIs and microservices, always focused on solid architecture and long-term maintainability.",
-    pt: "Olá! Eu sou o Mateus, um Engenheiro Backend (que também dá conta do front quando precisa) que gosta de transformar problemas complexos em sistemas confiáveis e bem testados. Nos últimos anos, trabalhei com APIs e microsserviços, sempre com foco em arquitetura sólida e manutenibilidade a longo prazo.",
+    en: "Hey there! I'm Mateus, a Full Stack Engineer with a backend focus who enjoys turning complex problems into reliable, well-tested systems. I started at a software outsourcing company, shipping APIs, microservices and legacy-system work for different clients. Today I lead the architecture of a multi-app agribusiness platform used by 340+ people, including an MCP server that lets the team operate it straight from Claude.",
+    pt: "Olá! Eu sou o Mateus, Engenheiro Full Stack com foco em backend, e gosto de transformar problemas complexos em sistemas confiáveis e bem testados. Comecei numa software house de outsourcing, entregando APIs, microsserviços e evoluções de sistemas legados para clientes diferentes. Hoje lidero a arquitetura de uma plataforma do agronegócio com vários apps e mais de 340 usuários, incluindo um servidor MCP que permite ao time operá-la direto pelo Claude.",
   },
   avatarUrl: "/avatar.jpg",
   resumeUrl: undefined,

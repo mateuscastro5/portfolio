@@ -52,7 +52,7 @@ function ProjectCard({ project, delay }: { project: ProjectEntry; delay: number 
             </Badge>
           ))}
         </CardContent>
-        <CardFooter className="gap-2">
+        <CardFooter className="flex-wrap gap-2">
           {project.liveUrl && (
             <Button
               variant="outline"
