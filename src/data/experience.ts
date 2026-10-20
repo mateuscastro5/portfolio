@@ -18,8 +18,8 @@ export const experiences: Experience[] = [
   {
     company: "Betalent",
     role: {
-      en: "Software Engineer",
-      pt: "Engenheiro de Software",
+      en: "Backend Developer",
+      pt: "Desenvolvedor Backend",
     },
     startDate: "2025-01-01",
     endDate: "2025-06-01",
