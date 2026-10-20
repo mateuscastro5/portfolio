@@ -14,9 +14,9 @@ export const projects: Project[] = [
     image: "/projects/artemis.png",
     liveUrl: "https://theartemis.vercel.app/",
     repos: [
-      { label: "Front", url: "https://github.com/mateuscastro5/perform-front" },
-      { label: "API", url: "https://github.com/mateuscastro5/perform-api" },
-      { label: "AI", url: "https://github.com/mateuscastro5/perform-ai" },
+      { label: "Front", url: "https://github.com/mateuscastro5/artemis-front" },
+      { label: "API", url: "https://github.com/mateuscastro5/artemis-api" },
+      { label: "AI", url: "https://github.com/mateuscastro5/artemis-ai" },
     ],
     featured: true,
   },
