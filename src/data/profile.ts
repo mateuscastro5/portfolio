@@ -26,7 +26,7 @@ export const profile: Profile = {
   resumeUrl: undefined,
   socialLinks: [
     { platform: "github", url: "https://github.com/mateuscastro5" },
-    { platform: "linkedin", url: "https://www.linkedin.com/in/mateus-fagundes-8500b4445" },
+    { platform: "linkedin", url: "https://www.linkedin.com/in/mateus-fagundes-dev" },
     { platform: "email", url: "mailto:mateus.castro2011@gmail.com" },
     { platform: "whatsapp", url: "https://wa.me/555397064365" },
   ],
