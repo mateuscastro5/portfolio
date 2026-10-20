@@ -39,20 +39,6 @@ export const projects: Project[] = [
   },
   {
     title: {
-      en: "AI Sorting Hat",
-      pt: "Chapéu Seletor IA",
-    },
-    description: {
-      en: "An end-to-end machine learning app that digitizes Hogwarts' Sorting Hat: two classifiers trained on Kaggle datasets (99.5% accuracy from personality traits, ~44% from registry data alone), served by a FastAPI API with a web system for single and batch sorting.",
-      pt: "Uma aplicação de Machine Learning de ponta a ponta que digitaliza o Chapéu Seletor de Hogwarts: dois classificadores treinados com datasets do Kaggle (99,5% de acurácia com traços de personalidade, ~44% só com a ficha cadastral), servidos por uma API FastAPI com um sistema web para seleção individual e em lote.",
-    },
-    techStack: ["Python", "scikit-learn", "pandas", "FastAPI"],
-    image: "/projects/sorting-hat.png",
-    repoUrl: "https://github.com/mateuscastro5/AI-SortingHat-HarryPotter",
-    featured: true,
-  },
-  {
-    title: {
       en: "Asteroids Neuroevolution",
       pt: "Asteroids com Neuroevolução",
     },
@@ -63,6 +49,20 @@ export const projects: Project[] = [
     techStack: ["Python", "NumPy", "Gymnasium", "ALE"],
     image: "/projects/asteroids.png",
     repoUrl: "https://github.com/mateuscastro5/asteroids-reinforcement-learning",
+    featured: true,
+  },
+  {
+    title: {
+      en: "AI Sorting Hat",
+      pt: "Chapéu Seletor IA",
+    },
+    description: {
+      en: "An end-to-end machine learning app that digitizes Hogwarts' Sorting Hat: two classifiers trained on Kaggle datasets (99.5% accuracy from personality traits, ~44% from registry data alone), served by a FastAPI API with a web system for single and batch sorting.",
+      pt: "Uma aplicação de Machine Learning de ponta a ponta que digitaliza o Chapéu Seletor de Hogwarts: dois classificadores treinados com datasets do Kaggle (99,5% de acurácia com traços de personalidade, ~44% só com a ficha cadastral), servidos por uma API FastAPI com um sistema web para seleção individual e em lote.",
+    },
+    techStack: ["Python", "scikit-learn", "pandas", "FastAPI"],
+    image: "/projects/sorting-hat.png",
+    repoUrl: "https://github.com/mateuscastro5/AI-SortingHat-HarryPotter",
     featured: false,
   },
   {
